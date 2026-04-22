@@ -1,4 +1,4 @@
-# Computer Vision & Pattern Recognition 2026
+# Computer Vision 2026
 
 Landing page for the USI Master-level course project ideas gallery.
 
@@ -11,7 +11,7 @@ Copy the example `<article class="project-card">` block in the project section a
 - a teaser image or visual
 - a short topic line
 - a project title
-- a 60-90 word pitch
+- a 60-120 word pitch
 
 Course information is based on the official USI profile:
 https://search.usi.ch/courses/35275471/computer-vision-pattern-recognition

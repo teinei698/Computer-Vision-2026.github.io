@@ -29,6 +29,13 @@ a {
   color: inherit;
 }
 
+#abstract .about-copy p,
+.project-abstract {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
+
 .site-nav {
   position: absolute;
   z-index: 3;
@@ -236,6 +243,14 @@ h2 {
   margin: 0 0 18px;
 }
 
+.about-copy .section-heading {
+  margin-bottom: 28px;
+}
+
+.about-copy .section-heading p {
+  margin: 0;
+}
+
 .topic-list {
   display: flex;
   flex-wrap: wrap;
@@ -285,8 +300,38 @@ h2 {
 }
 
 .band {
-  background: #eef5f2;
-  border-block: 1px solid #d5e4dd;
+  background: #f4f6f5;
+  border-block: 1px solid #e0e5e3;
+}
+
+.point-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+  box-shadow: 0 12px 28px rgba(18, 20, 23, 0.08);
+}
+
+.point-card {
+  min-height: 170px;
+  padding: 22px;
+  background: var(--surface);
+}
+
+.point-card strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--red);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.point-card p {
+  margin: 0;
+  color: #303841;
 }
 
 .projects-grid {
@@ -419,6 +464,51 @@ h2 {
 
 .project-toggle:checked ~ .project-toggle-less {
   display: inline;
+}
+
+.add-project-card {
+  border: 2px dashed #9db9b3;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: none;
+}
+
+.add-project-card a {
+  min-height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal);
+  text-decoration: none;
+  text-align: center;
+}
+
+.add-project-icon {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.add-project-card strong {
+  margin-bottom: 8px;
+  color: var(--ink);
+  font-size: 1.12rem;
+}
+
+.add-project-card span:last-child {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-align: center;
+  text-align-last: center;
 }
 
 .contribute {
