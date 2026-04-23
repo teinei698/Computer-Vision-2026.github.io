@@ -110,7 +110,58 @@
             </div>
           </article>
 
-          
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Two hands playing rock-paper-scissors, but one holds a banana instead of a valid sign, illustrating anomaly detection.">
+              <img src="assets/group_J.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group J</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Self-supervised video representations, foundation models, anomaly detection</p>
+              <h3>Probing V-JEPA 2: What Does a Video Model Actually See?</h3>
+              <p class="project-abstract">
+                V-JEPA 2 is Meta&rsquo;s self-supervised video encoder, trained without labels to predict masked
+                spatio-temporal regions. We want to open up its latent space and understand how it reacts to the
+                visual world &mdash; and, more interestingly, to things that don&rsquo;t belong in it. Starting from a frozen
+                pretrained encoder, we build an interactive demo that embeds short clips and surfaces structure,
+                similarity, and drift over time. On top of this, we explore anomaly detection as a concrete
+                application: can the embedding space tell a banana from a pair of scissors in a rock-paper-scissors
+                game, a boat on a highway, or a compression glitch from a real event?
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Two hands playing rock-paper-scissors, but one holds a banana instead of a valid sign, illustrating anomaly detection.">
+              <img src="assets/group_B.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group B</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Vision-language embeddings, segmentation, on-device retrieval</p>
+              <h3>One Photo, Many Aisles: Visual Search Across a Heterogeneous Marketplace</h3>
+              <p class="project-abstract">
+                A single foundation model rarely knows a sofa, a smartphone and a floral dress equally well — yet a real
+                marketplace catalog mixes all of them on the same shelf. This project studies where general-purpose visual
+                encoders like CLIP and SigLIP 2 stop being enough for e-commerce retrieval, and what has to be rebuilt
+                around them when the catalog is not one domain but twenty. Each query is first stripped of its context —
+                mannequins, human models, living-room scenes, studio gradients — then routed to a category-specific
+                expert whose embeddings are reranked with the fine-grained color and texture cues that generic models
+                quietly discard. The whole pipeline is then compressed into an on-device Android demo, raising a second
+                question the paper versions of Google Lens rarely address in the open: how much of a foundation-model
+                retrieval system actually survives when it has to run on a phone?
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="teaser" role="img" aria-label="Futuristic AR dashboard overlay on motorcycle FPV footage with object locking and hazard prediction highlights.">
               <img src="assets/group_R.png" alt="Jarvis AR Assistant Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
@@ -132,7 +183,6 @@
               </label>
             </div>
           </article>
-            
 
           <article class="project-card add-project-card">
             <a href="https://github.com/Computer-Vision-2026/Computer-Vision-2026.github.io/edit/main/index.html" target="_blank" rel="noopener">
